@@ -1,0 +1,1823 @@
+fileFormatVersion: 2
+guid: 2bd9468b389bca04da122cdba9743989
+timeCreated: 1472072635
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: kirby_spriteSheet_0
+    21300002: kirby_spriteSheet_1
+    21300004: kirby_spriteSheet_2
+    21300006: kirby_spriteSheet_3
+    21300008: kirby_spriteSheet_4
+    21300010: kirby_spriteSheet_5
+    21300012: kirby_spriteSheet_6
+    21300014: kirby_spriteSheet_7
+    21300016: kirby_spriteSheet_8
+    21300018: kirby_spriteSheet_9
+    21300020: kirby_spriteSheet_10
+    21300022: kirby_spriteSheet_11
+    21300024: kirby_spriteSheet_12
+    21300026: kirby_spriteSheet_13
+    21300028: kirby_spriteSheet_14
+    21300030: kirby_spriteSheet_15
+    21300032: kirby_spriteSheet_16
+    21300034: kirby_spriteSheet_17
+    21300036: kirby_spriteSheet_18
+    21300038: kirby_spriteSheet_19
+    21300040: kirby_spriteSheet_20
+    21300042: kirby_spriteSheet_21
+    21300044: kirby_spriteSheet_22
+    21300046: kirby_spriteSheet_23
+    21300048: kirby_spriteSheet_24
+    21300050: kirby_spriteSheet_25
+    21300052: kirby_spriteSheet_26
+    21300054: kirby_spriteSheet_27
+    21300056: kirby_spriteSheet_28
+    21300058: kirby_spriteSheet_29
+    21300060: kirby_spriteSheet_30
+    21300062: kirby_spriteSheet_31
+    21300064: kirby_spriteSheet_32
+    21300066: kirby_spriteSheet_33
+    21300068: kirby_spriteSheet_34
+    21300070: kirby_spriteSheet_35
+    21300072: kirby_spriteSheet_36
+    21300074: kirby_spriteSheet_37
+    21300076: kirby_spriteSheet_38
+    21300078: kirby_spriteSheet_39
+    21300080: kirby_spriteSheet_40
+    21300082: kirby_spriteSheet_41
+    21300084: kirby_spriteSheet_42
+    21300086: kirby_spriteSheet_43
+    21300088: kirby_spriteSheet_44
+    21300090: kirby_spriteSheet_45
+    21300092: kirby_spriteSheet_46
+    21300094: kirby_spriteSheet_47
+    21300096: kirby_spriteSheet_48
+    21300098: kirby_spriteSheet_49
+    21300100: kirby_spriteSheet_50
+    21300102: kirby_spriteSheet_51
+    21300104: kirby_spriteSheet_52
+    21300106: kirby_spriteSheet_53
+    21300108: kirby_spriteSheet_54
+    21300110: kirby_spriteSheet_55
+    21300112: kirby_spriteSheet_56
+    21300114: kirby_spriteSheet_57
+    21300116: kirby_spriteSheet_58
+    21300118: kirby_spriteSheet_59
+    21300120: kirby_spriteSheet_60
+    21300122: kirby_spriteSheet_61
+    21300124: kirby_spriteSheet_62
+    21300126: kirby_spriteSheet_63
+    21300128: kirby_spriteSheet_64
+    21300130: kirby_spriteSheet_65
+    21300132: kirby_spriteSheet_66
+    21300134: kirby_spriteSheet_67
+    21300136: kirby_spriteSheet_68
+    21300138: kirby_spriteSheet_69
+    21300140: kirby_spriteSheet_70
+    21300142: kirby_spriteSheet_71
+    21300144: kirby_spriteSheet_72
+    21300146: kirby_spriteSheet_73
+    21300148: kirby_spriteSheet_74
+    21300150: kirby_spriteSheet_75
+    21300152: kirby_spriteSheet_76
+    21300154: kirby_spriteSheet_77
+    21300156: kirby_spriteSheet_78
+    21300158: kirby_spriteSheet_79
+    21300160: kirby_spriteSheet_80
+    21300162: kirby_spriteSheet_81
+    21300164: kirby_spriteSheet_82
+    21300166: kirby_spriteSheet_83
+    21300168: kirby_spriteSheet_84
+    21300170: kirby_spriteSheet_85
+    21300172: kirby_spriteSheet_86
+    21300174: kirby_spriteSheet_87
+    21300176: kirby_spriteSheet_88
+    21300178: kirby_spriteSheet_89
+    21300180: kirby_spriteSheet_90
+    21300182: kirby_spriteSheet_91
+    21300184: kirby_spriteSheet_92
+    21300186: kirby_spriteSheet_93
+    21300188: kirby_spriteSheet_94
+    21300190: kirby_spriteSheet_95
+    21300192: kirby_spriteSheet_96
+    21300194: kirby_spriteSheet_97
+    21300196: kirby_spriteSheet_98
+    21300198: kirby_spriteSheet_99
+    21300200: kirby_spriteSheet_100
+    21300202: kirby_spriteSheet_101
+    21300204: kirby_spriteSheet_102
+    21300206: kirby_spriteSheet_103
+    21300208: kirby_spriteSheet_104
+    21300210: kirby_spriteSheet_105
+    21300212: kirby_spriteSheet_106
+    21300214: kirby_spriteSheet_107
+    21300216: kirby_spriteSheet_108
+    21300218: kirby_spriteSheet_109
+    21300220: kirby_spriteSheet_110
+    21300222: kirby_spriteSheet_111
+    21300224: kirby_spriteSheet_112
+    21300226: kirby_spriteSheet_113
+    21300228: kirby_spriteSheet_114
+    21300230: kirby_spriteSheet_115
+    21300232: kirby_spriteSheet_116
+    21300234: kirby_spriteSheet_117
+    21300236: kirby_spriteSheet_118
+    21300238: kirby_spriteSheet_119
+    21300240: kirby_spriteSheet_120
+    21300242: kirby_spriteSheet_121
+    21300244: kirby_spriteSheet_122
+    21300246: kirby_spriteSheet_123
+    21300248: kirby_spriteSheet_124
+    21300250: kirby_spriteSheet_125
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 50
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: kirby_spriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 356
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 356
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 356
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 355
+        width: 29
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 355
+        width: 26
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 355
+        width: 29
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 355
+        width: 27
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 355
+        width: 25
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 355
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 355
+        width: 26
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_10
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 355
+        width: 29
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_11
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 355
+        width: 27
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_12
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 355
+        width: 25
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_13
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 355
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_14
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 355
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_15
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 316
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_16
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 316
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_17
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 316
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_18
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 316
+        width: 35
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_19
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 316
+        width: 31
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_20
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 316
+        width: 30
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_21
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 316
+        width: 31
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_22
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 316
+        width: 33
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_23
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 316
+        width: 32
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_24
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 316
+        width: 30
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_25
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 316
+        width: 33
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_26
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 316
+        width: 13
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_27
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 316
+        width: 31
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_28
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 279
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_29
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 279
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_30
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 279
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_31
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 274
+        width: 27
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_32
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 274
+        width: 30
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_33
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 274
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_34
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 275
+        width: 28
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_35
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 275
+        width: 26
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_36
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 275
+        width: 23
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_37
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 276
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_38
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 275
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_39
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 274
+        width: 25
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_40
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 274
+        width: 27
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_41
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 276
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_42
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 244
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_43
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 244
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_44
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 244
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_45
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 232
+        width: 24
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_46
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 232
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_47
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 232
+        width: 26
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_48
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 232
+        width: 28
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_49
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 232
+        width: 28
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_50
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 232
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_51
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 232
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_52
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 233
+        width: 43
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_53
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 233
+        width: 44
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_54
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 233
+        width: 27
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_55
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 207
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_56
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 207
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_57
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 207
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_58
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 189
+        width: 25
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_59
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 189
+        width: 23
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_60
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 191
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_61
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 190
+        width: 23
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_62
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 191
+        width: 30
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_63
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 193
+        width: 30
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_64
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 196
+        width: 30
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_65
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 191
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_66
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 191
+        width: 24
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_67
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 191
+        width: 28
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_68
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 173
+        width: 30
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_69
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 173
+        width: 30
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_70
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 173
+        width: 30
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_71
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 151
+        width: 26
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_72
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 151
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_73
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 151
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_74
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 151
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_75
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 150
+        width: 25
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_76
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 150
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_77
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 151
+        width: 28
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_78
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 151
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_79
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 151
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_80
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 151
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_81
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 129
+        width: 30
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_82
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 129
+        width: 30
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_83
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 129
+        width: 30
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_84
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 110
+        width: 27
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_85
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 110
+        width: 30
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_86
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 110
+        width: 24
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_87
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 110
+        width: 27
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_88
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 111
+        width: 24
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_89
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 111
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_90
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 111
+        width: 28
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_91
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 111
+        width: 30
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_92
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 111
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_93
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 112
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_94
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 113
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_95
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 86
+        width: 30
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_96
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 86
+        width: 30
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_97
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 86
+        width: 30
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_98
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 62
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_99
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 62
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_100
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 62
+        width: 30
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_101
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 62
+        width: 30
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_102
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 62
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_103
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 62
+        width: 33
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_104
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 63
+        width: 29
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_105
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 63
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_106
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 63
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_107
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 63
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_108
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 63
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_109
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 45
+        width: 30
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_110
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 45
+        width: 30
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_111
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 45
+        width: 30
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_112
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 2
+        width: 30
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_113
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 2
+        width: 30
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_114
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 2
+        width: 30
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_115
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 15
+        width: 31
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_116
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 15
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_117
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 15
+        width: 31
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_118
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 15
+        width: 31
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_119
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 15
+        width: 31
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_120
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 15
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_121
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 15
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_122
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 15
+        width: 26
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_123
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 15
+        width: 31
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_124
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 15
+        width: 39
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: kirby_spriteSheet_125
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 15
+        width: 38
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
