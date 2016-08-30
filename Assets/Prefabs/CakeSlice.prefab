@@ -21,6 +21,9 @@ GameObject:
   - 4: {fileID: 4000014225091232}
   - 212: {fileID: 212000010722690180}
   - 50: {fileID: 50000013847178488}
+  - 114: {fileID: 114000010815193080}
+  - 60: {fileID: 60000013440744456}
+  - 114: {fileID: 114000012021467152}
   m_Layer: 0
   m_Name: CakeSlice
   m_TagString: Projectile
@@ -52,12 +55,72 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0.5
   m_IsKinematic: 0
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!60 &60000013440744456
+PolygonCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012838866454}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  m_Points:
+    m_Paths:
+    - - {x: 0.12833333, y: 0.06333333}
+      - {x: 0.07833333, y: 0.11166667}
+      - {x: 0.031666666, y: 0.15833333}
+      - {x: 0.02, y: 0.16666667}
+      - {x: -0.02, y: 0.16666667}
+      - {x: -0.045, y: 0.155}
+      - {x: -0.05, y: 0.15}
+      - {x: -0.07833333, y: 0.14333333}
+      - {x: -0.083333336, y: 0.12666667}
+      - {x: -0.108333334, y: 0.12833333}
+      - {x: -0.13833334, y: 0.11333334}
+      - {x: -0.15333334, y: 0.09833334}
+      - {x: -0.16666667, y: 0.08166667}
+      - {x: -0.16666667, y: -0.095}
+      - {x: -0.15166667, y: -0.11}
+      - {x: -0.030000001, y: -0.14}
+      - {x: 0.07833333, y: -0.16666667}
+      - {x: 0.155, y: -0.16666667}
+      - {x: 0.16666667, y: -0.155}
+      - {x: 0.16666667, y: 0.018333334}
+      - {x: 0.15166667, y: 0.033333335}
+--- !u!114 &114000010815193080
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012838866454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e7a3ea622027b74490e3a001f7f7069, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifetime: 2
+--- !u!114 &114000012021467152
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012838866454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0171543052adc44bbac836ae515e548, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cakeValue: 2
+  isProjectile: 1
 --- !u!212 &212000010722690180
 SpriteRenderer:
   m_ObjectHideFlags: 1
