@@ -8,7 +8,7 @@ public class AnimationController : MonoBehaviour {
 
     Animator animator;
 
-    bool facingRight = true;
+    public bool facingRight = true;
 
     // Use this for initialization
     void Start () {
@@ -35,15 +35,31 @@ public class AnimationController : MonoBehaviour {
             Flip();
         else if (move < 0 && facingRight)
             Flip();
+
+
+    }
+
+    void Update()
+    {
+        if (Input.GetButtonDown("Attack_" + playerNum))
+        {
+            animator.SetBool("Punching", true);
+        }
+        if (Input.GetButtonUp("Attack_" + playerNum))
+        {
+            animator.SetBool("Punching", false);
+        }
+
     }
 
     //Flips the Sprite so it can be used when moving left or right
     void Flip()
     {
         facingRight = !facingRight;
-        Vector3 scale = transform.localScale;
-        scale.x *= -1;
-        transform.localScale = scale;
+        //Vector3 scale = transform.localScale;
+        //scale.x *= -1;
+        //transform.localScale = scale;
+        this.GetComponent<SpriteRenderer>().flipX = !facingRight;
     }
 
     void OnCollisionExit2D(Collision2D coll)
@@ -68,5 +84,10 @@ public class AnimationController : MonoBehaviour {
             default:
                 break;
         }
+    }
+
+    bool getFacingRight()
+    {
+        return facingRight;
     }
 }

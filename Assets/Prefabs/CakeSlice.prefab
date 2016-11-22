@@ -39,7 +39,7 @@ Transform:
   m_GameObject: {fileID: 1000012838866454}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
@@ -52,10 +52,10 @@ Rigidbody2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012838866454}
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 0.5
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 0.5
+  m_GravityScale: 0.25
   m_IsKinematic: 0
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -70,32 +70,16 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   m_Points:
     m_Paths:
-    - - {x: 0.12833333, y: 0.06333333}
-      - {x: 0.07833333, y: 0.11166667}
-      - {x: 0.031666666, y: 0.15833333}
-      - {x: 0.02, y: 0.16666667}
-      - {x: -0.02, y: 0.16666667}
-      - {x: -0.045, y: 0.155}
-      - {x: -0.05, y: 0.15}
-      - {x: -0.07833333, y: 0.14333333}
-      - {x: -0.083333336, y: 0.12666667}
-      - {x: -0.108333334, y: 0.12833333}
-      - {x: -0.13833334, y: 0.11333334}
-      - {x: -0.15333334, y: 0.09833334}
-      - {x: -0.16666667, y: 0.08166667}
-      - {x: -0.16666667, y: -0.095}
-      - {x: -0.15166667, y: -0.11}
-      - {x: -0.030000001, y: -0.14}
-      - {x: 0.07833333, y: -0.16666667}
-      - {x: 0.155, y: -0.16666667}
-      - {x: 0.16666667, y: -0.155}
-      - {x: 0.16666667, y: 0.018333334}
-      - {x: 0.15166667, y: 0.033333335}
+    - - {x: 0.13090375, y: 0.0035713117}
+      - {x: -0.0044340394, y: 0.13048133}
+      - {x: -0.13447773, y: 0.06835111}
+      - {x: -0.13325135, y: -0.08022015}
+      - {x: 0.13514888, y: -0.13228881}
 --- !u!114 &114000010815193080
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -107,7 +91,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e7a3ea622027b74490e3a001f7f7069, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lifetime: 2
+  lifetime: 4
 --- !u!114 &114000012021467152
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -121,6 +105,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cakeValue: 2
   isProjectile: 1
+  splatterParticle: {fileID: 1000010065277730, guid: 2b259820d73f92e4fb7eb063cee87fd4,
+    type: 2}
+  splatterSprite: {fileID: 1000013453971808, guid: 9552b32e03f03d644a0f1270a11f1da7,
+    type: 2}
 --- !u!212 &212000010722690180
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -149,7 +137,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: 52fd7945235428a4e9b29ef8cf5c8cbd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

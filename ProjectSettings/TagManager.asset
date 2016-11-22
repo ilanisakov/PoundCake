@@ -7,6 +7,8 @@ TagManager:
   - Ground
   - Cake
   - Projectile
+  - Wall
+  - FrontWall
   layers:
   - Default
   - TransparentFX

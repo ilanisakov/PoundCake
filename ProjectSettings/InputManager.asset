@@ -278,11 +278,11 @@ InputManager:
     axis: 4
     joyNum: 2
   - serializedVersion: 3
-    m_Name: Fire1_1
+    m_Name: DashRight_1
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
-    positiveButton: joystick button 0
+    positiveButton: joystick 1 button 5
     altNegativeButton: 
     altPositiveButton: 
     gravity: 1000
@@ -294,11 +294,43 @@ InputManager:
     axis: 0
     joyNum: 1
   - serializedVersion: 3
-    m_Name: Fire1_2
+    m_Name: DashRight_2
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
-    positiveButton: joystick button 0
+    positiveButton: joystick 2 button 5
+    altNegativeButton: 
+    altPositiveButton: 
+    gravity: 1000
+    dead: 0.001
+    sensitivity: 1000
+    snap: 0
+    invert: 0
+    type: 0
+    axis: 0
+    joyNum: 2
+  - serializedVersion: 3
+    m_Name: DashLeft_1
+    descriptiveName: 
+    descriptiveNegativeName: 
+    negativeButton: 
+    positiveButton: joystick 1 button 4
+    altNegativeButton: 
+    altPositiveButton: 
+    gravity: 1000
+    dead: 0.001
+    sensitivity: 1000
+    snap: 0
+    invert: 0
+    type: 0
+    axis: 0
+    joyNum: 1
+  - serializedVersion: 3
+    m_Name: DashLeft_2
+    descriptiveName: 
+    descriptiveNegativeName: 
+    negativeButton: 
+    positiveButton: joystick 2 button 4
     altNegativeButton: 
     altPositiveButton: 
     gravity: 1000
@@ -314,7 +346,7 @@ InputManager:
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
-    positiveButton: joystick button 1
+    positiveButton: joystick 1 button 1
     altNegativeButton: 
     altPositiveButton: 
     gravity: 1000
@@ -330,7 +362,7 @@ InputManager:
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
-    positiveButton: joystick button 1
+    positiveButton: joystick 2 button 1
     altNegativeButton: 
     altPositiveButton: 
     gravity: 1000
@@ -342,7 +374,7 @@ InputManager:
     axis: 0
     joyNum: 2
   - serializedVersion: 3
-    m_Name: Fire3_1
+    m_Name: Attack_1
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
@@ -358,7 +390,7 @@ InputManager:
     axis: 0
     joyNum: 1
   - serializedVersion: 3
-    m_Name: Fire3_2
+    m_Name: Attack_2
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
@@ -486,6 +518,22 @@ InputManager:
     axis: 9
     joyNum: 1
   - serializedVersion: 3
+    m_Name: LeftTrigger_1
+    descriptiveName: 
+    descriptiveNegativeName: 
+    negativeButton: 
+    positiveButton: 
+    altNegativeButton: 
+    altPositiveButton: 
+    gravity: 1000
+    dead: 0.2
+    sensitivity: 1000
+    snap: 0
+    invert: 0
+    type: 2
+    axis: 8
+    joyNum: 1
+  - serializedVersion: 3
     m_Name: RightTrigger_2
     descriptiveName: 
     descriptiveNegativeName: 
@@ -500,4 +548,20 @@ InputManager:
     invert: 0
     type: 2
     axis: 9
+    joyNum: 2
+  - serializedVersion: 3
+    m_Name: LeftTrigger_2
+    descriptiveName: 
+    descriptiveNegativeName: 
+    negativeButton: 
+    positiveButton: 
+    altNegativeButton: 
+    altPositiveButton: 
+    gravity: 1000
+    dead: 0.2
+    sensitivity: 1000
+    snap: 1
+    invert: 0
+    type: 2
+    axis: 8
     joyNum: 2

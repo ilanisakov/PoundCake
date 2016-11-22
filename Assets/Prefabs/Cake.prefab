@@ -19,9 +19,9 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 4000011484545678}
-  - 114: {fileID: 114000012032689354}
   - 212: {fileID: 212000011677626258}
   - 61: {fileID: 61000012474372624}
+  - 50: {fileID: 50000011571790956}
   m_Layer: 0
   m_Name: Cake
   m_TagString: Cake
@@ -37,11 +37,28 @@ Transform:
   m_GameObject: {fileID: 1000010417517068}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!50 &50000011571790956
+Rigidbody2D:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010417517068}
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!61 &61000012474372624
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -51,23 +68,11 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: -0.25}
   serializedVersion: 2
   m_Size: {x: 2, y: 1.5}
---- !u!114 &114000012032689354
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000010417517068}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e0171543052adc44bbac836ae515e548, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cakeValue: 20
 --- !u!212 &212000011677626258
 SpriteRenderer:
   m_ObjectHideFlags: 1
