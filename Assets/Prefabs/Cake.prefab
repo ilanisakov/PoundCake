@@ -22,6 +22,7 @@ GameObject:
   - 212: {fileID: 212000011677626258}
   - 61: {fileID: 61000012474372624}
   - 50: {fileID: 50000011571790956}
+  - 114: {fileID: 114000012139028122}
   m_Layer: 0
   m_Name: Cake
   m_TagString: Cake
@@ -36,8 +37,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000010417517068}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
+  m_LocalPosition: {x: -5.283, y: 4.356, z: 0}
+  m_LocalScale: {x: 0.12097501, y: 0.12097501, z: 0.12097501}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
@@ -70,9 +71,26 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: 0, y: -0.25}
+  m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 2, y: 1.5}
+  m_Size: {x: 2.25, y: 2.47}
+--- !u!114 &114000012139028122
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010417517068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0171543052adc44bbac836ae515e548, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cakeValue: 50
+  isProjectile: 0
+  splatterParticle: {fileID: 1000010065277730, guid: 2b259820d73f92e4fb7eb063cee87fd4,
+    type: 2}
+  splatterSprite: {fileID: 1000013453971808, guid: 9552b32e03f03d644a0f1270a11f1da7,
+    type: 2}
 --- !u!212 &212000011677626258
 SpriteRenderer:
   m_ObjectHideFlags: 1

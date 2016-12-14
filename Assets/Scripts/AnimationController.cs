@@ -23,9 +23,10 @@ public class AnimationController : MonoBehaviour {
 	void FixedUpdate () {
 
         float move = Input.GetAxis("Horizontal_" + playerNum);
+        float moveV = Input.GetAxis("Vertical_" + playerNum);
 
         //Changing to Idle animation if not moving
-        if (move == 0)
+        if (move == 0 && moveV == 0)
             animator.SetBool("Walking", false);
         else
             animator.SetBool("Walking", true);
@@ -41,14 +42,14 @@ public class AnimationController : MonoBehaviour {
 
     void Update()
     {
-        if (Input.GetButtonDown("Attack_" + playerNum))
-        {
-            animator.SetBool("Punching", true);
-        }
-        if (Input.GetButtonUp("Attack_" + playerNum))
-        {
-            animator.SetBool("Punching", false);
-        }
+        //if (Input.GetButtonDown("Attack_" + playerNum))
+        //{
+        //    animator.SetBool("Punching", true);
+        //}
+        //if (Input.GetButtonUp("Attack_" + playerNum))
+        //{
+        //    animator.SetBool("Punching", false);
+        //}
 
     }
 

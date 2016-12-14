@@ -4,34 +4,30 @@ using System.Collections;
 public class mainCamera : MonoBehaviour {
 
     Camera mainC;
-    public int numPlayers;
+    private int numPlayers;
 
     private Vector3 position;
     private float size;
-    private float minSize = 4.5f;
-    private float maxSize = 8.0f;
+    private float minSize = 2.5f;
+    private float maxSize = 6.5f;
     private float minX, maxX, minY, maxY, midX, midY, disX, disY;
-    private float offset = 1.0f;
+    private float offset = 0.0f;
     private float depth;
     private Vector3[] playerPositions;
+    private GameObject[] players;
 
     // Use this for initialization
     void Start()
     {
+
+        numPlayers = PlayerPrefs.GetInt("numberPlayers");
         mainC = this.GetComponent<Camera>();
 
         position = transform.position;
         size = this.GetComponent<Camera>().orthographicSize;
-        depth = position.z;
-
+        depth = position.z;  
+        
         playerPositions = new Vector3[numPlayers];
-
-        UpdatePositions();
-
-        minX = playerPositions[0].x;
-        maxX = playerPositions[0].x;
-        minY = playerPositions[0].y;
-        maxY = playerPositions[0].y;
 
     }
 
@@ -79,11 +75,22 @@ public class mainCamera : MonoBehaviour {
 
     void UpdatePositions()
     {
+        
         for (int i = 0; i < numPlayers; i++)
         {
-            string name = "Player_" + (i + 1);
-            playerPositions[i] = GameObject.Find(name).transform.position;
-            //Debug.Log(name + ":" + playerPositions[i]);
+            playerPositions[i] = players[i].transform.position;
         }
+    }
+
+    public void FindPlayers()
+    {
+
+        players = GameObject.FindGameObjectsWithTag("Player");
+        UpdatePositions();
+
+        minX = playerPositions[0].x;
+        maxX = playerPositions[0].x;
+        minY = playerPositions[0].y;
+        maxY = playerPositions[0].y;
     }
 }

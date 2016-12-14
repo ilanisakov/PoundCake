@@ -4,18 +4,17 @@ using UnityEngine.UI;
 
 public class Controller : MonoBehaviour {
 
-    public float maxSpeed = 10f;
-    public float jumpPower = 5f;
-    public float dashPower = 2f;
+    public float maxSpeed = 1.0f;
+    public float jumpPower = 1.0f;
+    public float dashPower = 1.0f;
     public float shotDelay = 1.0f;
-    public float hideDelay = 3.0f;
-    public float cakeSpeed = 100f;
+    public float hideDelay = 1.0f;
+    public float cakeSpeed = 1.0f;
     public float reticleOffset = 0.5f;
+    public int cakeValue = 1;
     public Color myColor;
     public GameObject intakeParticles;
-    
-
-    public Text debugtext;
+    public GameObject hitParticle;
 
     public Rigidbody2D cakeProjectile;
     public Rigidbody2D cakeSheild;
@@ -23,7 +22,7 @@ public class Controller : MonoBehaviour {
     private int jumps = 2;
     private int playerNum;
     private int currentCakeValue;
-    private bool canShoot;
+    public bool canShoot;
     private bool facingRight = true;
     private bool grounded;
     private bool hidden = false;
@@ -46,8 +45,8 @@ public class Controller : MonoBehaviour {
         //Getting the player number from the character class
         character = (Character)this.GetComponent(typeof(Character));
         playerNum = character.playerNumber;
-        myColor.a = 1.0f;
-        this.GetComponent<SpriteRenderer>().color = myColor;
+        myColor = character.getColor();
+        //this.GetComponent<SpriteRenderer>().color = myColor;
 
         canShoot = true;
 
@@ -102,35 +101,41 @@ public class Controller : MonoBehaviour {
         //else if (Input.GetAxis("LeftTrigger_" + playerNum) != 0)
         //    Jump();
 
-        if (Input.GetButtonDown("DashRight_" + playerNum))
-            Dash(true);
-        else if (Input.GetButtonDown("DashLeft_" + playerNum))
-            Dash(false);
+        //if (Input.GetButtonDown("DashRight_" + playerNum))
+        //    Dash(true);
+        //else if (Input.GetButtonDown("DashLeft_" + playerNum))
+        //    Dash(false);
 
         // }
-        if (Input.GetButtonDown("Attack_" + playerNum))
-        {
-            Debug.Log("Attack");
-            StartCoroutine(shoot(1));
-            Attack(moveH,moveV);
-        }
+        //if (Input.GetButtonDown("Attack_" + playerNum))
+        //{
+        //    //Dash(moveH, moveV);
+        //    character.UseMove();
+        //}
 
-        if (Input.GetButtonDown("Fire2_" + playerNum))
-        {
-            if (hidden)
-            {
-                unhide();
-            }
-            else
-                StartCoroutine(hide());
-        }
+        //if (Input.GetButtonDown("Fire2_" + playerNum))
+        //{
+        //    if (hidden)
+        //    {
+        //        unhide();
+        //    }
+        //    else
+        //        StartCoroutine(hide());
+        //}
 
 
         //setCursor();
         float aimH = Input.GetAxis("Horizontal_Aim_" + playerNum);
         float aimV = Input.GetAxis("Vertical_Aim_" + playerNum);
 
-        if(canShoot && (aimH != 0 | aimV != 0))
+        ////--------------------------DEBUGGING----------------------------------
+        //if (playerNum == 2 && canShoot)
+        //{
+        //    StartCoroutine(shoot(0));
+        //}
+        //---------------------------------------------------------------------
+
+        if (canShoot && (aimH != 0 | aimV != 0))
         {
             if(!grounded || aimV >= 0)
                 StartCoroutine(shoot(0));
@@ -171,6 +176,10 @@ public class Controller : MonoBehaviour {
             this.GetComponent<Rigidbody2D>().MovePosition(new Vector2(this.GetComponent<Rigidbody2D>().position.x + dashPower, this.GetComponent<Rigidbody2D>().position.y));
         else
             this.GetComponent<Rigidbody2D>().MovePosition(new Vector2(this.GetComponent<Rigidbody2D>().position.x - dashPower, this.GetComponent<Rigidbody2D>().position.y));
+    }
+    void Dash(float H, float V)
+    {
+            this.GetComponent<Rigidbody2D>().MovePosition(new Vector2(this.GetComponent<Rigidbody2D>().position.x + (dashPower * H), this.GetComponent<Rigidbody2D>().position.y + (dashPower * V)));
     }
     void Attack(float moveH, float moveV)
     {
@@ -230,6 +239,9 @@ public class Controller : MonoBehaviour {
     {
         float aimH = Input.GetAxis("Horizontal_Aim_" + playerNum);
         float aimV = Input.GetAxis("Vertical_Aim_" + playerNum);
+
+        //if (playerNum == 2)
+        //    aimH = 1;
         //Debug.Log("Player " + playerNum + ": Horizontal(" + aimH + "): Vertical(" + aimV + ")");
         if (!(aimH == 0 && aimV == 0))
         {
@@ -251,20 +263,23 @@ public class Controller : MonoBehaviour {
             }
 
             //Setting Cake Value
-            currentCakeValue = character.WeightTier * 2;
+            double temp = System.Math.Pow(cakeValue, character.WeightTier);
+            currentCakeValue = (int)temp;
             shotCake.SetCakeValue(currentCakeValue);
 
             //Creates the cake and shoots it in the direction the player's right thumbstick
             Rigidbody2D cakeSliceClone = (Rigidbody2D)Instantiate(cakeProjectile, this.transform.position, quat);
             cakeSliceClone.GetComponent<SpriteRenderer>().color = myColor;
-            float scale = character.WeightTier * 0.9f;
+            float scale = character.WeightTier * 0.45f;
             cakeSliceClone.gameObject.transform.localScale = new Vector3(scale, scale, 1);
+            cakeSliceClone.GetComponent<Cake>().SetCakeSize(character.WeightTier);
             Physics2D.IgnoreCollision(cakeSliceClone.GetComponent<PolygonCollider2D>(), this.GetComponent<BoxCollider2D>()); //making the cake not collide with the shooter
             Vector3 aimRotation = new Vector3(aimH, aimV);
             aimRotation.Normalize();
             cakeSliceClone.velocity = aimRotation * cakeSpeed;
+            Destroy(cakeSliceClone, 3);
 
-            //character.EatCake(-currentCakeValue);
+            character.EatCake(-character.WeightTier);
         }
     }
 
@@ -357,9 +372,10 @@ public class Controller : MonoBehaviour {
                 grounded = true;
                 break;
             case "Projectile":
-                Debug.Log("Ow");
+                //Debug.Log("Ow");
                 character.EatCake(coll.gameObject.GetComponent<Cake>().cakeValue);
-                character.takeDamage(coll.gameObject.GetComponent<Cake>().cakeValue / 2);
+                Object g = Instantiate(hitParticle, this.transform.position, transform.rotation);
+                Destroy(g, 1);
                 Destroy(coll.gameObject);
                 break;
             default:
