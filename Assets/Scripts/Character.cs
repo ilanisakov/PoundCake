@@ -44,6 +44,7 @@ public class Character : MonoBehaviour {
     private HUDScript HUDController;
 
     private GameObject deathparticles;
+    private float cakeDecreaseScale;
 
 	// Use this for initialization
 	void Start () {
@@ -54,19 +55,23 @@ public class Character : MonoBehaviour {
 
         isDead = false;
 
+        cakeDecreaseScale = -.15f / 50.0f;
+
     }
 	
 	// Update is called once per frame
 	void Update () {
         updateHud();
-        if (health <= 0)
+        if (health <= 0 && !isDead)
         {
             controller.canShoot = false;
             if (dead)
             {
                 
                 deathparticles.transform.position = character.position;
-                cakeAmount -= .2f;
+                cakeAmount -= .15f;
+                this.gameObject.transform.localScale = new Vector3(this.gameObject.transform.localScale.x + cakeDecreaseScale, this.gameObject.transform.localScale.y + cakeDecreaseScale, this.gameObject.transform.localScale.z);
+
                 if (cakeAmount <= 0)
                     isDead = true;
             }
@@ -74,7 +79,7 @@ public class Character : MonoBehaviour {
             {
                 deathparticles = (GameObject)Instantiate(deathParticle, character.position, transform.rotation);
                 dead = true;
-                
+                controller.maxSpeed = 8.0f;
             }
         }
             
@@ -96,7 +101,7 @@ public class Character : MonoBehaviour {
                 this.gameObject.transform.localScale = new Vector3(this.gameObject.transform.localScale.x + scale, this.gameObject.transform.localScale.y + scale, this.gameObject.transform.localScale.z);
                 WeightTier = (int)this.gameObject.transform.localScale.x; //setting weight tier
                 //this.GetComponent<Rigidbody2D>().gravityScale = this.gameObject.transform.localScale.x * .5f; //Setting gravity
-                Debug.Log("Player " + playerNumber + ":" + this.gameObject.transform.localScale + " : " + weightTier);
+                //Debug.Log("Player " + playerNumber + ":" + this.gameObject.transform.localScale + " : " + weightTier);
                 return true;
             }
         }
@@ -108,7 +113,7 @@ public class Character : MonoBehaviour {
                 this.gameObject.transform.localScale = new Vector3(this.gameObject.transform.localScale.x + scale, this.gameObject.transform.localScale.y + scale, this.gameObject.transform.localScale.z);
                 WeightTier = (int)this.gameObject.transform.localScale.x; //setting weight tier
                 //this.GetComponent<Rigidbody2D>().gravityScale = this.gameObject.transform.localScale.x * .5f; //Setting gravity
-                Debug.Log("Player " + playerNumber + ":" + this.gameObject.transform.localScale + " : " + weightTier);
+                //Debug.Log("Player " + playerNumber + ":" + this.gameObject.transform.localScale + " : " + weightTier);
                 return true;
             }
         }

@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 using System.Collections;
 using UnityEngine.UI;
 
@@ -26,6 +27,7 @@ public class GameManager : MonoBehaviour {
     private GameObject[] players;
     private GameObject[] playerPrefabs;
     private GameObject[] playerPanels;
+    private Character[] playerCharacter;
     private Vector3[] startingPositions;
 
     //Other Scripts
@@ -40,6 +42,7 @@ public class GameManager : MonoBehaviour {
         numPlayers = PlayerPrefs.GetInt("numberPlayers");
 
         playerPrefabs = new GameObject[] { playerPrefab1, playerPrefab2, playerPrefab3, playerPrefab4 };
+        playerCharacter = new Character[numPlayers];
 
         currentConnectedControllers = Input.GetJoystickNames().Length;
 
@@ -65,13 +68,14 @@ public class GameManager : MonoBehaviour {
             c.HUD = GameObject.Find(HUDName);
             c.cakeDelayScale = 0.20f;
             c.cakeSpeedScale = 1.15f;
-            c.hasteSpeed = 6.0f;
+            c.hasteSpeed = 7.0f;
             c.hasteSpeedDuration = 3.0f;
             c.healthRestore = 20;
             c.moveSpeedScale = 0.75f;
             c.rapidFireSpeed = 0.15f;
             c.rapidFireDuration = 2.5f;
 
+            playerCharacter[i] = c;
             
 
             Controller controller = players[i].GetComponent<Controller>();
@@ -110,6 +114,11 @@ public class GameManager : MonoBehaviour {
                 break;
             case GameState.GameOver:
                 gameOverText.GetComponent<Text>().text = "Game Over";
+                if (Input.GetButtonDown("Start"))
+                {
+                    SceneManager.LoadScene("PreGame");
+                }
+
                 break;
         }
     }
@@ -136,10 +145,9 @@ public class GameManager : MonoBehaviour {
     private void checkDead()
     {
         int num = numPlayers;
-        foreach(GameObject p in players)
+        foreach(Character p in playerCharacter)
         {
-            Character c = p.GetComponent<Character>();
-            if(c.isDead)
+            if(p.isDead)
             {
                 num--;
             }

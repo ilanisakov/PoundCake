@@ -500,9 +500,9 @@ MonoBehaviour:
     type: 2}
   playerPrefab2: {fileID: 1000012872164990, guid: 0540509186583764791327e8e8c1ee0f,
     type: 2}
-  playerPrefab3: {fileID: 1000011326702678, guid: 533ed657fb2a6774088a9ee852f18e29,
+  playerPrefab3: {fileID: 1000012827763942, guid: 6e8c877705c59294da260d9bf31794d5,
     type: 2}
-  playerPrefab4: {fileID: 1000013990388926, guid: d817f3eb383c44d49aaca29804392d13,
+  playerPrefab4: {fileID: 1000011331603072, guid: 1de00cc68a2629a499ad32d249771c8b,
     type: 2}
   middleText: {fileID: 934308157}
 --- !u!4 &455354310

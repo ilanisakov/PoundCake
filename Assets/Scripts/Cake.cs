@@ -18,13 +18,15 @@ public class Cake : MonoBehaviour
     private Vector2 velocity;
     private int size = 1;
 
+    private SpriteRenderer particleColor;
+
     // Use this for initialization
     void Start()
     {
         myTransform = this.GetComponent<Rigidbody2D>().transform;
         myColor = this.GetComponent<SpriteRenderer>().color;
         myColor.a = 0.45f;
-        splatterSprite.GetComponent<SpriteRenderer>().color = myColor;
+        particleColor = splatterSprite.GetComponent<SpriteRenderer>();
         splatterParticle.GetComponent<ParticleSystem>().startColor = myColor;
 
         myCollider = this.GetComponent<PolygonCollider2D>();
@@ -54,6 +56,7 @@ public class Cake : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D coll)
     {
+        particleColor.color = myColor;
         velocity = rigidbody.velocity;
         switch (coll.gameObject.tag)
         {

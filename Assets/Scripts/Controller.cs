@@ -33,6 +33,8 @@ public class Controller : MonoBehaviour {
     private GameObject reticle;
     private Rigidbody2D myRigidBody;
     private Rigidbody2D thisCakeSheild;
+    private BoxCollider2D myBoxCollider;
+    private Color cakeColor;
 
     //BoxCollider2D rightbox;
     //BoxCollider2D leftbox;
@@ -46,6 +48,10 @@ public class Controller : MonoBehaviour {
         character = (Character)this.GetComponent(typeof(Character));
         playerNum = character.playerNumber;
         myColor = character.getColor();
+        if (myColor != Color.white)
+            cakeColor = myColor;
+        else
+            cakeColor = new Color(.945f, .412f, 1.0f);
         //this.GetComponent<SpriteRenderer>().color = myColor;
 
         canShoot = true;
@@ -73,6 +79,8 @@ public class Controller : MonoBehaviour {
         shotCake = cakeProjectile.GetComponent<Cake>();
 
         //Debug.Log(myColor);
+
+        myBoxCollider = this.GetComponent<BoxCollider2D>();
     }
 
     // Always has the same timestamp, so do all the physics here
@@ -88,52 +96,11 @@ public class Controller : MonoBehaviour {
         else if (moveH < 0 && facingRight)
             Flip();
 
-        this.GetComponent<Rigidbody2D>().velocity = new Vector2(moveH * maxSpeed, moveV * maxSpeed);
-        //Debug.Log(this.GetComponent<Rigidbody2D>().velocity);
-        //if (moveV > 0)
-        //    Jump();
-        //else if (moveV < 0)
-        //    Dive();
-        //Jumping
+        myRigidBody.velocity = new Vector2(moveH * maxSpeed, moveV * maxSpeed);
 
-        //if (Input.GetAxis("RightTrigger_" + playerNum) != 0)
-        //    Jump();
-        //else if (Input.GetAxis("LeftTrigger_" + playerNum) != 0)
-        //    Jump();
-
-        //if (Input.GetButtonDown("DashRight_" + playerNum))
-        //    Dash(true);
-        //else if (Input.GetButtonDown("DashLeft_" + playerNum))
-        //    Dash(false);
-
-        // }
-        //if (Input.GetButtonDown("Attack_" + playerNum))
-        //{
-        //    //Dash(moveH, moveV);
-        //    character.UseMove();
-        //}
-
-        //if (Input.GetButtonDown("Fire2_" + playerNum))
-        //{
-        //    if (hidden)
-        //    {
-        //        unhide();
-        //    }
-        //    else
-        //        StartCoroutine(hide());
-        //}
-
-
-        //setCursor();
         float aimH = Input.GetAxis("Horizontal_Aim_" + playerNum);
         float aimV = Input.GetAxis("Vertical_Aim_" + playerNum);
 
-        ////--------------------------DEBUGGING----------------------------------
-        //if (playerNum == 2 && canShoot)
-        //{
-        //    StartCoroutine(shoot(0));
-        //}
-        //---------------------------------------------------------------------
 
         if (canShoot && (aimH != 0 | aimV != 0))
         {
@@ -141,17 +108,6 @@ public class Controller : MonoBehaviour {
                 StartCoroutine(shoot(0));
             
         }
-        //Shooting Cake
-        //if (Input.GetAxis("RightTrigger_" + playerNum) != 0 && canShoot)
-        //{
-        //    StartCoroutine(shoot());
-        //}
-
-        //if (Input.GetButtonUp("Attack_" + playerNum))
-        //{
-        //    rightbox.enabled = false;
-        //}
-
         
     }
 
@@ -243,44 +199,42 @@ public class Controller : MonoBehaviour {
         //if (playerNum == 2)
         //    aimH = 1;
         //Debug.Log("Player " + playerNum + ": Horizontal(" + aimH + "): Vertical(" + aimV + ")");
-        if (!(aimH == 0 && aimV == 0))
+        Quaternion quat = Quaternion.identity;
+        float rotation = Mathf.Rad2Deg * Mathf.Atan(aimV / aimH);
+        //Debug.Log(rotation);
+        //Getting the proper angle to rotate the cake image 
+        if (aimV > 0)
         {
-            Quaternion quat = Quaternion.identity;
-            float rotation = Mathf.Rad2Deg * Mathf.Atan(aimV / aimH);
-            //Debug.Log(rotation);
-            //Getting the proper angle to rotate the cake image 
-            if (aimV > 0)
-            {
-                quat = (rotation > 0) ? Quaternion.Euler(0, 0, rotation) : Quaternion.Euler(0, -180, -rotation);
-            }
-            else if (aimH == -1)
-            {
-                quat = Quaternion.Euler(0, 180, 0);
-            }
-            else
-            {
-                quat = (rotation > 0) ? Quaternion.Euler(0, -180, 360.0f - rotation) : Quaternion.Euler(0, 0, 360.0f + rotation);
-            }
-
-            //Setting Cake Value
-            double temp = System.Math.Pow(cakeValue, character.WeightTier);
-            currentCakeValue = (int)temp;
-            shotCake.SetCakeValue(currentCakeValue);
-
-            //Creates the cake and shoots it in the direction the player's right thumbstick
-            Rigidbody2D cakeSliceClone = (Rigidbody2D)Instantiate(cakeProjectile, this.transform.position, quat);
-            cakeSliceClone.GetComponent<SpriteRenderer>().color = myColor;
-            float scale = character.WeightTier * 0.45f;
-            cakeSliceClone.gameObject.transform.localScale = new Vector3(scale, scale, 1);
-            cakeSliceClone.GetComponent<Cake>().SetCakeSize(character.WeightTier);
-            Physics2D.IgnoreCollision(cakeSliceClone.GetComponent<PolygonCollider2D>(), this.GetComponent<BoxCollider2D>()); //making the cake not collide with the shooter
-            Vector3 aimRotation = new Vector3(aimH, aimV);
-            aimRotation.Normalize();
-            cakeSliceClone.velocity = aimRotation * cakeSpeed;
-            Destroy(cakeSliceClone, 3);
-
-            character.EatCake(-character.WeightTier);
+            quat = (rotation > 0) ? Quaternion.Euler(0, 0, rotation) : Quaternion.Euler(0, -180, -rotation);
         }
+        else if (aimH == -1)
+        {
+            quat = Quaternion.Euler(0, 180, 0);
+        }
+        else
+        {
+            quat = (rotation > 0) ? Quaternion.Euler(0, -180, 360.0f - rotation) : Quaternion.Euler(0, 0, 360.0f + rotation);
+        }
+
+        //Setting Cake Value
+        double temp = System.Math.Pow(cakeValue, character.WeightTier);
+        currentCakeValue = (int)temp;
+        shotCake.SetCakeValue(currentCakeValue);
+
+        //Creates the cake and shoots it in the direction the player's right thumbstick
+        Rigidbody2D cakeSliceClone = (Rigidbody2D)Instantiate(cakeProjectile, this.transform.position, quat);
+        cakeSliceClone.GetComponent<SpriteRenderer>().color = cakeColor;
+        float scale = character.WeightTier * 0.45f;
+        cakeSliceClone.gameObject.transform.localScale = new Vector3(scale, scale, 1);
+        cakeSliceClone.GetComponent<Cake>().SetCakeSize(character.WeightTier);
+        Physics2D.IgnoreCollision(cakeSliceClone.GetComponent<PolygonCollider2D>(), myBoxCollider); //making the cake not collide with the shooter
+        Vector3 aimRotation = new Vector3(aimH, aimV);
+        aimRotation.Normalize();
+        cakeSliceClone.velocity = aimRotation * cakeSpeed;
+        Destroy(cakeSliceClone, 3);
+
+        character.EatCake(-character.WeightTier);
+        
     }
 
     void goHide()
