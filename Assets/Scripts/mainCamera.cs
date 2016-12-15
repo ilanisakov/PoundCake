@@ -9,7 +9,7 @@ public class mainCamera : MonoBehaviour {
     private Vector3 position;
     private float size;
     private float minSize = 2.5f;
-    private float maxSize = 6.5f;
+    private float maxSize = 9.5f;
     private float minX, maxX, minY, maxY, midX, midY, disX, disY;
     private float offset = 0.0f;
     private float depth;
@@ -41,10 +41,10 @@ public class mainCamera : MonoBehaviour {
         foreach (Vector3 pos in playerPositions)
         {
             if (pos.x >= maxX) { maxX = pos.x; }
-            else { minX = pos.x; }
+            else if (pos.x < minX) { minX = pos.x; }
 
             if (pos.y >= maxY) { maxY = pos.y; }
-            else { minY = pos.y; }
+            else if (pos.y < minY) { minY = pos.y; }
 
         }
 
@@ -88,9 +88,9 @@ public class mainCamera : MonoBehaviour {
         players = GameObject.FindGameObjectsWithTag("Player");
         UpdatePositions();
 
-        minX = playerPositions[0].x;
-        maxX = playerPositions[0].x;
-        minY = playerPositions[0].y;
-        maxY = playerPositions[0].y;
+        minX = float.MaxValue;
+        maxX = float.MinValue;
+        minY = float.MaxValue;
+        maxY = float.MinValue;
     }
 }

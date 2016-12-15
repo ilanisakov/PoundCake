@@ -12,7 +12,7 @@ public class StartScreen : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        if (Input.GetButtonDown("Submit_1") || Input.GetButtonDown("Submit_2"))
+        if (Input.GetButtonDown("Submit_1") || Input.GetButtonDown("Submit_2") || Input.GetButtonDown("Submit_3") || Input.GetButtonDown("Submit_4"))
         {
             SceneManager.LoadScene("PreGame");
         }

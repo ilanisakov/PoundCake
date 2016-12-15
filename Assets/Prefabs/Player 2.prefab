@@ -165,6 +165,7 @@ MonoBehaviour:
   cakeSheild: {fileID: 50000011571790956, guid: 515e18f8e89c1d54197533d67bd8822f,
     type: 2}
   canShoot: 0
+  dead: 0
 --- !u!114 &114000013513178074
 MonoBehaviour:
   m_ObjectHideFlags: 1

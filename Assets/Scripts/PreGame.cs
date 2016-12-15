@@ -96,6 +96,7 @@ public class PreGame : MonoBehaviour {
 
     private int currentConnectedControllers;
     private int maxColors = 6;
+    private int activePlayers = 0;
 
     private PlayerPanel[] playerPanels;
     private ArrayList selectedColors;
@@ -125,6 +126,7 @@ public class PreGame : MonoBehaviour {
             playerPanels[i].canGoNext = true;
             playerPanels[i].currentColor = 0;
             playerPanels[i].myColor = new Color(0,0,0);
+            playerPanels[i].myIcon.color = Color.white;
 
 
 
@@ -166,6 +168,7 @@ public class PreGame : MonoBehaviour {
                 playerPanels[0].Ready = true;
                 selectedColors.Add(playerPanels[0].currentColor);
                 playerPanels[0].InUse = false;
+                activePlayers++;
             }
 
         }
@@ -182,6 +185,7 @@ public class PreGame : MonoBehaviour {
                 playerPanels[1].Ready = true;
                 selectedColors.Add(playerPanels[1].currentColor);
                 playerPanels[1].InUse = false;
+                activePlayers++;
             }
         }
         else if (Input.GetButtonDown("Submit_3") && !playerPanels[2].Ready)
@@ -195,8 +199,9 @@ public class PreGame : MonoBehaviour {
             else
             {
                 playerPanels[2].Ready = true;
-                selectedColors.Add(playerPanels[1].currentColor);
+                selectedColors.Add(playerPanels[2].currentColor);
                 playerPanels[2].InUse = false;
+                activePlayers++;
             }
         }
         else if (Input.GetButtonDown("Submit_4") && !playerPanels[3].Ready)
@@ -210,8 +215,9 @@ public class PreGame : MonoBehaviour {
             else
             {
                 playerPanels[3].Ready = true;
-                selectedColors.Add(playerPanels[1].currentColor);
+                selectedColors.Add(playerPanels[3].currentColor);
                 playerPanels[3].InUse = false;
+                activePlayers++;
             }
         }
 
@@ -225,6 +231,7 @@ public class PreGame : MonoBehaviour {
                 playerPanels[0].Ready = false;
                 selectedColors.Remove(playerPanels[0].currentColor);
                 playerPanels[0].InUse = true;
+                activePlayers--;
             }
         }
         else if (Input.GetButtonDown("Fire2_2"))
@@ -236,6 +243,7 @@ public class PreGame : MonoBehaviour {
                 playerPanels[1].Ready = false;
                 selectedColors.Remove(playerPanels[1].currentColor);
                 playerPanels[1].InUse = true;
+                activePlayers--;
             }
         }
         else if (Input.GetButtonDown("Fire2_3"))
@@ -247,6 +255,7 @@ public class PreGame : MonoBehaviour {
                 playerPanels[2].Ready = false;
                 selectedColors.Remove(playerPanels[2].currentColor);
                 playerPanels[2].InUse = true;
+                activePlayers--;
             }
         }
         else if (Input.GetButtonDown("Fire2_4"))
@@ -258,19 +267,24 @@ public class PreGame : MonoBehaviour {
                 playerPanels[3].Ready = false;
                 selectedColors.Remove(playerPanels[3].currentColor);
                 playerPanels[3].InUse = true;
+                activePlayers--;
             }
         }
 
         //Pressing Start
         if (Input.GetButtonDown("Start") && checkReady())
         {
-            PlayerPrefs.SetInt("numberPlayers", currentConnectedControllers);
+            PlayerPrefs.SetInt("numberPlayers", activePlayers);
 
 
             playerPrefab.GetComponent<SpriteRenderer>().color = playerPanels[0].myIcon.color;
+            Debug.Log("Player 1 color: " + playerPanels[0].myIcon.color);
             playerPrefab2.GetComponent<SpriteRenderer>().color = playerPanels[1].myIcon.color;
+            Debug.Log("Player 2 color: " + playerPanels[1].myIcon.color);
             playerPrefab3.GetComponent<SpriteRenderer>().color = playerPanels[2].myIcon.color;
+            Debug.Log("Player 3 color: " + playerPanels[2].myIcon.color);
             playerPrefab4.GetComponent<SpriteRenderer>().color = playerPanels[3].myIcon.color;
+            Debug.Log("Player 4 color: " + playerPanels[3].myIcon.color);
 
             SceneManager.LoadScene("TEST");
         }
@@ -399,36 +413,25 @@ public class PreGame : MonoBehaviour {
 
     }
 
-    bool isReady()
-    {
-        int num = 0;
-        foreach(PlayerPanel p in playerPanels)
-        {
-            if (p.Ready)
-                num++;
-        }
 
-        if (currentConnectedControllers == num)
-        {
-           
-            return true;
-        }
-        else
-        {
-            
-            return false;
-        }
-    }
 
     bool checkReady()
     {
+        int emptycheck = 0;
         foreach(PlayerPanel p in playerPanels)
         {
-            if(p.Connected && !p.Ready)
+            if(p.InUse && !p.Ready)
             {
                 middleText.GetComponent<Text>().text = "Waiting for players...";
                 return false;
             }
+            if (!p.InUse && !p.Ready)
+                emptycheck++;
+        }
+        if (emptycheck == 4)
+        {
+            middleText.GetComponent<Text>().text = "Waiting for players...";
+            return false;
         }
         middleText.GetComponent<Text>().text = "Press Start to Begin";
         return true;

@@ -70,7 +70,7 @@ public class GameManager : MonoBehaviour {
             c.cakeSpeedScale = 1.15f;
             c.hasteSpeed = 7.0f;
             c.hasteSpeedDuration = 3.0f;
-            c.healthRestore = 20;
+            c.healthRestore = 10;
             c.moveSpeedScale = 0.75f;
             c.rapidFireSpeed = 0.15f;
             c.rapidFireDuration = 2.5f;

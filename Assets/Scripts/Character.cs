@@ -73,7 +73,11 @@ public class Character : MonoBehaviour {
                 this.gameObject.transform.localScale = new Vector3(this.gameObject.transform.localScale.x + cakeDecreaseScale, this.gameObject.transform.localScale.y + cakeDecreaseScale, this.gameObject.transform.localScale.z);
 
                 if (cakeAmount <= 0)
+                {
                     isDead = true;
+                    controller.dead = true;
+                    this.GetComponent<Rigidbody2D>().velocity = new Vector2();
+                }
             }
             else
             {
@@ -168,17 +172,21 @@ public class Character : MonoBehaviour {
         controller = this.gameObject.GetComponent<Controller>();
         character = this.gameObject.GetComponent<Rigidbody2D>().transform;
         HUDController = HUD.GetComponent<HUDScript>();
-        HUDController.ChangeColor(this.GetComponent<SpriteRenderer>().color);
+        HUDController.ChangeColor(getColor());
     }
 
     public Color getColor()
     {
-        return this.GetComponent<SpriteRenderer>().color;
+        Color c = this.GetComponent<SpriteRenderer>().color;
+        if (c == Color.white)
+            return new Color(.945f, .412f, 1.0f);
+        else
+            return c;
     }
 
     public void newPowerUp()
     {
-        if (!moveReady && currentMove == PowerUp.None)
+        if (!moveReady && currentMove == PowerUp.None && !dead)
         {
             int moveNum = Random.Range(0, numMoves);
             switch (moveNum)

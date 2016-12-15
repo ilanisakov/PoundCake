@@ -46,8 +46,6 @@ public class Cake : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-
         quat.eulerAngles = new Vector3( 0,0,Random.Range(0, 360));
 
         if(cakeValue <= 0)
@@ -94,7 +92,6 @@ public class Cake : MonoBehaviour
                 //Destroy(part2, 0.5f);
                 break;
             case "Wall":
-                Debug.Log(myTransform.position);
                 Instantiate(splatterSprite, myTransform.position, quat);
                 Destroy(gameObject);
                 break;

@@ -23,6 +23,7 @@ public class Controller : MonoBehaviour {
     private int playerNum;
     private int currentCakeValue;
     public bool canShoot;
+    public bool dead;
     private bool facingRight = true;
     private bool grounded;
     private bool hidden = false;
@@ -60,27 +61,13 @@ public class Controller : MonoBehaviour {
 
         myRigidBody = this.GetComponent<Rigidbody2D>();
 
-        //BoxCollider2D[] hitboxes = this.GetComponentsInChildren<BoxCollider2D>();
-        //foreach(BoxCollider2D collider in hitboxes)
-        //{
-        //    switch (collider.name)
-        //    {
-        //        case "RightHitbox":
-        //            rightbox = collider;
-        //            break;
-        //        case "LeftHitbox":
-        //            leftbox = collider;
-        //            break;
-        //    }
-
-        //    //collider.enabled = false;
-        //}
-
         shotCake = cakeProjectile.GetComponent<Cake>();
 
         //Debug.Log(myColor);
 
         myBoxCollider = this.GetComponent<BoxCollider2D>();
+
+        dead = false;
     }
 
     // Always has the same timestamp, so do all the physics here
@@ -96,7 +83,8 @@ public class Controller : MonoBehaviour {
         else if (moveH < 0 && facingRight)
             Flip();
 
-        myRigidBody.velocity = new Vector2(moveH * maxSpeed, moveV * maxSpeed);
+        if(!dead)
+            myRigidBody.velocity = new Vector2(moveH * maxSpeed, moveV * maxSpeed);
 
         float aimH = Input.GetAxis("Horizontal_Aim_" + playerNum);
         float aimV = Input.GetAxis("Vertical_Aim_" + playerNum);
@@ -136,43 +124,6 @@ public class Controller : MonoBehaviour {
     void Dash(float H, float V)
     {
             this.GetComponent<Rigidbody2D>().MovePosition(new Vector2(this.GetComponent<Rigidbody2D>().position.x + (dashPower * H), this.GetComponent<Rigidbody2D>().position.y + (dashPower * V)));
-    }
-    void Attack(float moveH, float moveV)
-    {
-        ////Attack is Left or Right
-        //if(moveH > moveV)
-        //{
-        //    if(moveH > 0)
-        //    {
-        //        rightbox.enabled = true;
-        //    }
-        //    else
-        //    {
-        //        leftbox.enabled = false;
-        //    }
-        //}
-        //else
-        //{
-        //    if(moveV < 0)//attack is down
-        //    {
-
-        //    }
-        //    else if(moveV == 0)//attack is stationary
-        //    {
-        //        if (GetComponent<AnimationController>().facingRight)
-        //        {
-        //            rightbox.enabled = true;
-        //        }
-        //        else
-        //        {
-        //            leftbox.enabled = false;
-        //        }
-        //    }
-        //    else//attack is up
-        //    {
-
-        //    }
-        //}
     }
     IEnumerator shoot(int direction)
     {
