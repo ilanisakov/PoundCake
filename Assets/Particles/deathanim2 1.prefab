@@ -157,7 +157,7 @@ ParticleSystem:
     serializedVersion: 2
     enabled: 1
     startLifetime:
-      scalar: 20
+      scalar: 60
       maxCurve:
         serializedVersion: 2
         m_Curve:

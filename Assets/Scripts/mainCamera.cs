@@ -35,16 +35,24 @@ public class mainCamera : MonoBehaviour {
     void Update()
     {
 
+
+        minX = float.MaxValue;
+        maxX = float.MinValue;
+        minY = float.MaxValue;
+        maxY = float.MinValue;
+
         UpdatePositions();
 
         //find min and max values
         foreach (Vector3 pos in playerPositions)
         {
-            if (pos.x >= maxX) { maxX = pos.x; }
-            else if (pos.x < minX) { minX = pos.x; }
+            if (pos.x == 8675.0f)
+                continue;
 
+            if (pos.x >= maxX) { maxX = pos.x; }
+            if (pos.x < minX) { minX = pos.x; }
             if (pos.y >= maxY) { maxY = pos.y; }
-            else if (pos.y < minY) { minY = pos.y; }
+            if (pos.y < minY) { minY = pos.y; }
 
         }
 

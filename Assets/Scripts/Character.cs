@@ -77,6 +77,8 @@ public class Character : MonoBehaviour {
                     isDead = true;
                     controller.dead = true;
                     this.GetComponent<Rigidbody2D>().velocity = new Vector2();
+                    this.transform.position = new Vector3(8675.0f,309.0f);
+                    deathparticles.GetComponent<ParticleSystem>().Stop(false);
                 }
             }
             else

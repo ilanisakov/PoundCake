@@ -33,8 +33,9 @@ public class PowerUP : MonoBehaviour
             {
                 StartCoroutine(disable());
                 Character c = other.gameObject.GetComponent<Character>();
-                c.newPowerUp();
                 c.EatCake(cakeValue);
+                c.newPowerUp();
+                
             }
         }
     }

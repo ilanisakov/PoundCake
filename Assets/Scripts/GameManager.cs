@@ -71,7 +71,7 @@ public class GameManager : MonoBehaviour {
             c.hasteSpeed = 7.0f;
             c.hasteSpeedDuration = 3.0f;
             c.healthRestore = 10;
-            c.moveSpeedScale = 0.75f;
+            c.moveSpeedScale = 0.80f;
             c.rapidFireSpeed = 0.15f;
             c.rapidFireDuration = 2.5f;
 
@@ -131,14 +131,14 @@ public class GameManager : MonoBehaviour {
             GameObject.Find(HUDName).SetActive(false);
         }
 
-        for(int j = 0; j < playerPanels.Length; j++)
-        {
-            Color c = players[j].GetComponent<Character>().getColor();
-            if (c != Color.white)
-                playerPanels[j].GetComponent<HUDScript>().ChangeColor(c);
-            else
-                playerPanels[j].GetComponent<HUDScript>().ChangeColor(new Color(.945f, .412f, 1.0f));
-        }
+        //for(int j = 0; j < playerPanels.Length; j++)
+        //{
+        //    Color c = players[j].GetComponent<Character>().getColor();
+        //    if (c != Color.white)
+        //        playerPanels[j].GetComponent<HUDScript>().ChangeColor(c);
+        //    else
+        //        playerPanels[j].GetComponent<HUDScript>().ChangeColor(new Color(.945f, .412f, 1.0f));
+        //}
 
     }
 
