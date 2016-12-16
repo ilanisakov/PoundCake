@@ -3,6 +3,8 @@ Hey,
 Welcome to my game.
 It's called PoundCake.
 
+Run it in 16:9
+
 To play it you need to use Xbox controllers.
 The wireless adapter is super finiky so be careful for that.
 I recommend just plugging in the controllers via microUSB cord.
